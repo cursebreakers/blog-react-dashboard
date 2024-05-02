@@ -2,7 +2,7 @@
 
 v0.0.9
 
-Enables posting to the [Blog API](https://github.com/cursebreakers/blog-api) and [Static Viewer]()
+Enables posting to the [Blog API](https://github.com/cursebreakers/blog-api) and [Static Viewer](https://github.com/cursebreakers/blog-static-viewer)
 
 ## Overview:
 

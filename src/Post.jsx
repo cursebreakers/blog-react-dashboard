@@ -133,7 +133,6 @@ export function Editor({ blogData, username, toggleEditor }) {
 
 export function ConfirmDelete({ selectedPostId, postTitle, blogData, username }) {
 
-
   const handleDelete = async (e) => {
     console.log('Confirming delete')
 
@@ -144,7 +143,7 @@ export function ConfirmDelete({ selectedPostId, postTitle, blogData, username })
     try {
       const response = await deletePost({ selectedPostId, postTitle, blogData, token, username });
       console.log('Delete post response:', response);
-      
+      window.location.reload();
     } catch (error) {
       console.error('Error deleting post:', error);
     }

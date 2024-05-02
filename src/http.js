@@ -2,7 +2,6 @@
 
 import axios from 'axios';
 
-// Function to make a generic HTTP GET request
 export const get = async (url, config = {}) => {
   try {
     const response = await axios.get(url, config);
@@ -12,7 +11,6 @@ export const get = async (url, config = {}) => {
   }
 };
 
-// Function to make a generic HTTP POST request
 export const post = async (url, data, config = {}) => {
   try {
     const response = await axios.post(url, data, config);
@@ -21,5 +19,3 @@ export const post = async (url, data, config = {}) => {
     throw error;
   }
 };
-
-// Add other HTTP methods as needed (PUT, DELETE, etc.)

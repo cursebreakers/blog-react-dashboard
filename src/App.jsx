@@ -43,7 +43,6 @@ function App() {
     tokenPresent();
   }, []);
 
-
   const logout = () => {
     localStorage.removeItem('token');
     setUserToken('');

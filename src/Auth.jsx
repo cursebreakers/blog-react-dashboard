@@ -184,7 +184,7 @@ export function Auth({ onSignupSuccess, onLoginSuccess }) {
         <a onClick={toggleSignup}>
           {showSignup ? 'Already have an account? Log in' : 'Don\'t have an account? Sign up'}
         </a>
-        <h3><a href="http://192.168.1.242:8080">Skip login</a></h3>
+        <h3><a href="https://cursebreakers.github.io/blog-static-viewer/">Skip login</a></h3>
       </div>
     </>
   );

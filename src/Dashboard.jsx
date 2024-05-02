@@ -56,7 +56,7 @@ function Dashboard({ username, onLogout, token }) {
       {showEditor && <Editor blogData={blogData} toggleEditor={toggleEditor} username={username} />}
       {gearboxOpen && (
         <div className="gearSet">
-          <button onClick={() => { window.location.href = 'http://192.168.1.242:8080'; }}>Public</button>
+          <button onClick={() => { window.location.href = 'https://cursebreakers.github.io/blog-static-viewer/'; }}>Public</button>
           {!showSettings && <button onClick={toggleSettings}>Settings</button>}
           {showSettings && <AccountSettings toggleSettings={toggleSettings} username={username} blogData={blogData} token={token} />}
           <button onClick={handleLogout}>Logout</button>
@@ -69,6 +69,7 @@ function Dashboard({ username, onLogout, token }) {
 
 function AccountSettings({ blogData, username, token, toggleSettings }) {
   const [isEditing, setIsEditing] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const [formData, setFormData] = useState({
     newUsername: username,
     newTitle: blogData.title,

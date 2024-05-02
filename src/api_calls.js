@@ -3,10 +3,10 @@
 import axios from 'axios';
 import { get, post } from './http';
 
-const PING_API = 'http://192.168.1.242:6969/health';
-const BLOG_API = 'http://192.168.1.242:6969/profile';
-const API_AUTH = 'http://192.168.1.242:6969/auth';
-const POST_API = 'http://192.168.1.242:6969/posts';
+const PING_API = 'https://hollow-volcano-ghoul.glitch.me/health';
+const BLOG_API = 'https://hollow-volcano-ghoul.glitch.me/profile';
+const API_AUTH = 'https://hollow-volcano-ghoul.glitch.me/auth';
+const POST_API = 'https://hollow-volcano-ghoul.glitch.me/posts';
 
 
 export async function pingApi() {
